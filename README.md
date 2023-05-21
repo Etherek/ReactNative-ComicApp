@@ -35,7 +35,6 @@ Installing Dependencies
 Running the Project
 
     While still in the project directory, execute the command expo start or npm start.
-    After executing the above command, a new browser window will open with the Expo Developer Tools interface.
     You can scan the generated QR code using the Expo Go app on your mobile device or select the "Run on Android device/emulator" or "Run on iOS simulator" option if using an emulator.
 
 The project will be launched on your mobile device or emulator, and any changes made to the code will be immediately reflected.
