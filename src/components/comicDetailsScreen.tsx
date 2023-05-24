@@ -39,20 +39,20 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    padding: 16,
+    padding: '3%',
   },
   title: {
     fontSize: 24,
     fontWeight: 'bold',
-    marginBottom: 16,
+    marginBottom: '4%',
   },
   alt: {
     fontSize: 18,
-    marginBottom: 16,
+    marginBottom: '3%',
   },
   image: {
     width: '100%',
-    height: 200,
+    height: '40%',
     resizeMode: 'contain',
   },
 });

@@ -51,14 +51,14 @@ const styles = StyleSheet.create({
   bigTitle: {
     fontSize: 36,
     fontWeight: 'bold',
-    marginBottom: 24,
+    marginBottom: '2%',
   },
   button: {
     paddingHorizontal: 16,
     paddingVertical: 8,
     borderRadius: 8,
     backgroundColor: '#ddd',
-    marginBottom: 16,
+    marginBottom: '2%',
   },
   selectedButton: {
     backgroundColor: '#007aff',

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { View, Text, FlatList, Image, TouchableOpacity, StyleSheet } from 'react-native';
+import { View, Text, FlatList, Image, TouchableOpacity, StyleSheet, Dimensions } from 'react-native';
 import axios from 'axios';
 import { useInfiniteQuery } from 'react-query';
 import { useNavigation } from '@react-navigation/native';
@@ -87,29 +87,34 @@ const MainScreen: React.FC = () => {
   );
 };
 
+const windowWidth = Dimensions.get('window').width;
+const windowHeight = Dimensions.get('window').height;
+
 const styles = StyleSheet.create({
   container: {
     width: '80%',
     alignSelf: 'center',
-    marginBottom: 16,
+    marginBottom: windowHeight * 0.02,
     borderWidth: 1,
     borderColor: 'gray',
-    padding: 16,
+    padding: windowHeight * 0.02,
     borderRadius: 8,
   },
   comicImage: {
     width: '100%',
-    height: 200,
+    height: windowHeight * 0.2,
+    aspectRatio: 1,
     resizeMode: 'contain',
+    alignSelf: 'center',
   },
   comicTitle: {
-    fontSize: 18,
+    fontSize: windowWidth * 0.04,
     fontWeight: 'bold',
-    marginTop: 8,
+    marginTop: windowHeight * 0.02,
     alignSelf: 'center',
   },
   comicAlt: {
-    marginTop: 8,
+    marginTop: windowHeight * 0.02,
     alignSelf: 'center',
   },
 });
